@@ -28,7 +28,7 @@
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="solutions.html">Solutions</a></li>
             <li><a href="Sign Up.html">Sign Up</a></li>
             <li><a href="#" class="btn btn-light purple accent-4">Login</a></li>
@@ -44,9 +44,9 @@
       <ul class="sidenav" id="mobile-links">
         <li class=" grey darken-2"> <a href="#" class="brand-logo center white-text">Gizokal</a>
         </li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Solutions</a></li>
-        <li><a href="#">Sign Up</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="Sign Up.html">Sign Up</a></li>
         <li><a href="#">Testimonials</a></li>
         <li><a href="#" class="Log" id="Login">Login</a></li>
       </ul>
@@ -96,21 +96,16 @@
               <input type="text" placeholder="Company">
 
             </div>
-            <div class="input-field">
-              <textarea class="materialize-textarea" placeholder="Message"></textarea>
-              <div class="row">
-                <div class="col s12">
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">textsms</i>
-                      <input type="text" id="autocomplete-input" class="autocomplete">
-                      <label for="autocomplete-input">Autocomplete</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Students</option>
+                <option value="2">Developper</option>
+                <option value="3">Digner</option>
+              </select>
+              <label>Materialize Select</label>
             </div>
-            <input type="SIGNUp" value="SIGNUP" class="purple white-text center">
+            <a class="waves-effect btn purple accent-4 " style="width:100%;" >SignUp</a>
           </div>
 
         </div>
@@ -169,7 +164,7 @@
 
 <div id="Login" class="Log" >
   <!---------Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+  
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
@@ -221,6 +216,18 @@
     $(document).ready(function(){
     $('.modal').modal();
   });
+
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+
+
+  $(document).ready(function(){
+                $('.sidenav').sidenav();
+              });
+        
 
   </script>
 
